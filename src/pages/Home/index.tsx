@@ -61,6 +61,7 @@ import { useEffect, useState } from 'react'
 // ]
 
 export type Food = {
+  map(arg0: (food: any) => JSX.Element): import('react').ReactNode
   id: number
   titulo: string
   destacado: boolean
@@ -68,7 +69,7 @@ export type Food = {
   avaliacao: number
   descricao: string
   capa: string
-  cardapio?: [
+  cardapio: [
     {
       foto: string
       preco: number

@@ -11,6 +11,7 @@ import {
   Titulo,
   TituloModal
 } from './styles'
+import { Food } from '../../pages/Home'
 
 import pizzaModal from '../../assets/images/pizzaModal.png'
 import close from '../../assets/images/close.png'
@@ -24,6 +25,7 @@ type Props = {
 
 const ProductPerfil = ({ title, description, image }: Props) => {
   const [modalEstaAberto, setModalEstaAberto] = useState(false)
+  const [food, setFood] = useState<Food[]>([])
   return (
     <>
       <section>

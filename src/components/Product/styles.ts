@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
+import { Link } from 'react-router-dom'
 
-export const Card = styled.div`
+export const Card = styled(Link)`
   background-color: ${cores.branca};
   margin-bottom: 48px;
   border: 1px solid ${cores.salmao};
   position: relative;
+  text-decoration: none;
+  color: ${cores.salmao};
+  display: block;
 `
 
 export const Capa = styled.img`
